@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HELION ENERGY PVT LTD</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,300" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-flex">
+            <div class="logo-container">
+                <img src="logo.png" alt="HELION ENERGY Logo" class="logo" />
+            </div>
+            <div class="header-title">
+                <h1>HELION ENERGY PVT LTD</h1>
+                <p class="slogan">Helionizing the Future</p>
+                <div class="website-link">
+                    <a href="https://helionenergy.com.pk" target="_blank">www.helionenergy.com.pk</a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#quote" class="nav-quote-btn">Request a Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="hero-anim">
+              <!-- Animated SVG: Sun, solar panel, power flow -->
+              <svg viewBox="0 0 500 200" width="100%" height="180" class="solar-svg">
+                <!-- Sun -->
+                <circle cx="90" cy="60" r="28" fill="#FFD600">
+                  <animate attributeName="r" values="28;34;28" dur="2.5s" repeatCount="indefinite"/>
+                  <animate attributeName="opacity" values="1;0.8;1" dur="2.5s" repeatCount="indefinite"/>
+                </circle>
+                <!-- Sun rays -->
+                <g>
+                  <line x1="90" y1="20" x2="90" y2="0" stroke="#FFD600" stroke-width="4">
+                    <animateTransform attributeName="transform" type="rotate" from="0 90 60" to="360 90 60" dur="7s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="90" y1="100" x2="90" y2="130" stroke="#FFD600" stroke-width="4">
+                    <animateTransform attributeName="transform" type="rotate" from="0 90 60" to="360 90 60" dur="7s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="62" y1="60" x2="32" y2="60" stroke="#FFD600" stroke-width="4">
+                    <animateTransform attributeName="transform" type="rotate" from="0 90 60" to="360 90 60" dur="7s" repeatCount="indefinite"/>
+                  </line>
+                  <line x1="118" y1="60" x2="148" y2="60" stroke="#FFD600" stroke-width="4">
+                    <animateTransform attributeName="transform" type="rotate" from="0 90 60" to="360 90 60" dur="7s" repeatCount="indefinite"/>
+                  </line>
+                </g>
+                <!-- Solar panel -->
+                <rect x="160" y="110" width="120" height="38" fill="#1a237e" rx="8" stroke="#90caf9" stroke-width="3"/>
+                <rect x="170" y="117" width="25" height="24" fill="#1976d2" opacity="0.6"/>
+                <rect x="200" y="117" width="25" height="24" fill="#1976d2" opacity="0.6"/>
+                <rect x="230" y="117" width="25" height="24" fill="#1976d2" opacity="0.6"/>
+                <rect x="260" y="117" width="12" height="24" fill="#1976d2" opacity="0.6"/>
+                <!-- Power flow (animated line) -->
+                <polyline points="220,148 220,170 400,170 400,110" fill="none" stroke="#FFD600" stroke-width="6" stroke-dasharray="8 12">
+                  <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.5s" repeatCount="indefinite"/>
+                </polyline>
+                <!-- Power bolt at the end -->
+                <polygon points="393,110 400,120 396,120 403,130 400,120 404,120" fill="#FFD600">
+                  <animateTransform attributeName="transform" type="scale" additive="sum"
+                    from="1 1" to="1.25 1.25" begin="0s" dur="1s" repeatCount="indefinite" />
+                </polygon>
+              </svg>
+            </div>
+            <div class="hero-content">
+                <h2>
+                  Empowering Your World with Clean Energy
+                  <span class="bolt">&#9889;</span>
+                </h2>
+                <p>
+                  We provide expert solar installation, electrical and mechanical solutions for a sustainable, efficient future.
+                </p>
+                <a href="#quote" class="cta-btn animated-btn quote-btn">Request a Quote</a>
+                <a href="#contact" class="cta-btn animated-btn">Get a Free Consultation</a>
+            </div>
+        </section>
+        <section id="about" class="container fade-in">
+            <h3>About Us</h3>
+            <p>
+                <strong>HELION ENERGY PVT LTD</strong> is a leading energy solutions provider. We specialize in solar installation, electrical, and mechanical engineering services. Our mission is to enable a clean, green, and sustainable future for homes, businesses, and industries. With a team of certified professionals, we ensure top-notch quality and customer satisfaction.
+            </p>
+        </section>
+        <section id="services" class="container">
+            <h3>Our Services</h3>
+            <div class="services-grid">
+                <div class="service-card fade-in-up">
+                    <div class="service-icon solar">
+                        <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="12" fill="#FFD600"/><g>
+                          <rect x="18" y="34" width="12" height="6" fill="#1976d2" rx="2"/>
+                          <rect x="20" y="36" width="2" height="2" fill="#90caf9"/>
+                          <rect x="24" y="36" width="2" height="2" fill="#90caf9"/>
+                          <rect x="28" y="36" width="2" height="2" fill="#90caf9"/>
+                        </g></svg>
+                    </div>
+                    <h4>Solar Installation</h4>
+                    <p>Design, supply, and installation of rooftop and ground-mounted solar power systems for all applications.</p>
+                </div>
+                <div class="service-card fade-in-up" style="animation-delay:0.2s">
+                    <div class="service-icon electric">
+                        <svg width="48" height="48" viewBox="0 0 48 48"><polygon points="24,4 28,24 20,24 26,44 24,44 18,24 26,24" fill="#FFD600" stroke="#1976d2" stroke-width="2"/></svg>
+                    </div>
+                    <h4>Electrical Solutions</h4>
+                    <p>Complete electrical services including industrial, commercial, and residential wiring, automation, and safety systems.</p>
+                </div>
+                <div class="service-card fade-in-up" style="animation-delay:0.4s">
+                    <div class="service-icon mechanical">
+                        <svg width="48" height="48" viewBox="0 0 48 48"><circle cx="24" cy="24" r="12" fill="#1976d2"/><circle cx="24" cy="24" r="6" fill="#FFD600"/><g>
+                          <rect x="23" y="6" width="2" height="7" fill="#1976d2"/>
+                          <rect x="23" y="35" width="2" height="7" fill="#1976d2"/>
+                          <rect x="35" y="23" width="7" height="2" fill="#1976d2"/>
+                          <rect x="6" y="23" width="7" height="2" fill="#1976d2"/>
+                        </g></svg>
+                    </div>
+                    <h4>Mechanical Solutions</h4>
+                    <p>Engineering and implementation of mechanical systems, maintenance, and retrofitting for optimized performance.</p>
+                </div>
+                <div class="service-card fade-in-up" style="animation-delay:0.6s">
+                    <div class="service-icon consultancy">
+                        <svg width="48" height="48" viewBox="0 0 48 48"><rect x="8" y="16" width="32" height="20" fill="#90caf9" /><rect x="14" y="22" width="20" height="8" fill="#1976d2" /><rect x="20" y="26" width="8" height="4" fill="#FFD600" /></svg>
+                    </div>
+                    <h4>Energy Consultancy</h4>
+                    <p>Site surveys, feasibility studies, system optimization, and project management for energy efficiency.</p>
+                </div>
+            </div>
+        </section>
+        <section id="quote" class="container fade-in">
+            <h3>Request a Quote</h3>
+            <form>
+                <div class="form-group">
+                    <label for="qname">Name:</label>
+                    <input type="text" id="qname" name="qname" required>
+                </div>
+                <div class="form-group">
+                    <label for="qemail">Email:</label>
+                    <input type="email" id="qemail" name="qemail" required>
+                </div>
+                <div class="form-group">
+                    <label for="qphone">Phone:</label>
+                    <input type="tel" id="qphone" name="qphone">
+                </div>
+                <div class="form-group">
+                    <label for="qservice">Service Interested In:</label>
+                    <select id="qservice" name="qservice">
+                        <option>Solar Installation</option>
+                        <option>Electrical Solutions</option>
+                        <option>Mechanical Solutions</option>
+                        <option>Energy Consultancy</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="qmessage">Details:</label>
+                    <textarea id="qmessage" name="qmessage" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn animated-btn quote-btn">Submit Quote Request</button>
+            </form>
+        </section>
+        <section id="contact" class="container fade-in">
+            <h3>Contact Us</h3>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="cta-btn animated-btn">Send Message</button>
+            </form>
+            <div class="contact-details">
+                <p><strong>Email:</strong> info@helionenergy.com.pk</p>
+                <p>
+                    <strong>Phone:</strong> 
+                    <a href="tel:03162013612" class="contact-link">0316 2013612</a> &nbsp;|&nbsp;
+                    <a href="https://wa.me/923162013612" class="contact-link whatsapp-link" target="_blank" title="WhatsApp">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:18px;vertical-align:middle;margin-right:2px;">WhatsApp
+                    </a>
+                </p>
+                <p><strong>Address:</strong> LG17, Cantonment Mall, Rashid Minhas Rd, Karachi.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 HELION ENERGY PVT LTD. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
